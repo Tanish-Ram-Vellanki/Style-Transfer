@@ -1,7 +1,7 @@
 # Style-Transfer
 Neural style transfer using a VGG19-based CNN to blend content and artistic style through feature extraction and optimization.
 
-Dataset Link for Image Classification:
+# Dataset Link for Image Classification:
 https://www.kaggle.com/competitions/cifar100-image-classification/data
 
 Images Used for Style Transfer :
@@ -12,11 +12,11 @@ Tesla's Image from random google page
 Style Image used:
 https://www.kaggle.com/datasets/vbookshelf/art-by-ai-neural-style-transfer?select=style_image.jpg
 
-Style Transfer using VGG19
+# Style Transfer using VGG19
 
 Neural style transfer implementation using a VGG19-based convolutional neural network to blend the content of one image with the artistic style of another through feature extraction and optimization in PyTorch.
 
-Project Overview
+# Project Overview
 
 This project implements Neural Style Transfer (NST) by leveraging the deep convolutional layers of a VGG19 model. The core idea is to generate a new image that preserves the content of a given content image while adopting the style of a separate style image. This is achieved by extracting meaningful feature representations and optimizing a noise image using custom loss functions.
 
@@ -28,10 +28,10 @@ The project defines a custom VGG19 class inspired by the original VGG19 architec
 Feature Extractor
 Consists of convolutional layers followed by ReLU activations to extract low-level and high-level visual features such as edges, textures, and shapes.
 
-Classifier
+#Classifier
 Fully connected layers used for image classification during the initial training phase. These layers are not directly used during style transfer.
 
-Image Processing
+#Image Processing
 
 The image_processing() function:
 
@@ -45,7 +45,7 @@ Converts images into PyTorch tensors
 
 Adds a batch dimension to make them compatible with the network
 
-Dataset Handling
+#Dataset Handling
 ImageDataset Class
 
 A custom dataset class that:
